@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mulish&family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(to right, slateblue, steelblue);
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+}
+
+p {
+  font-size: xx-large;
+}
+
+.container {
+  height: 45vh;
+  width: 40vh;
+  background-color: steelblue;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.form-control {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 40vh;
+  color: #fff;
+  position: relative;
+}
+
+input {
+  border: none;
+
+  width: 100%;
+  background-color: steelblue;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+  align-self: center;
+  width: 100px;
+  color: #fff;
+  background-color: skyblue;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  transform: scaleY(0.98);
+  transition: transform 0.5s ease;
+}
+
+#email {
+  position: absolute;
+  top: 60px;
+}
+
+#password {
+  position: absolute;
+  top: 150px;
+}
+
+.form-control label span {
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span {
+  transform: translateY(-30px);
+}
